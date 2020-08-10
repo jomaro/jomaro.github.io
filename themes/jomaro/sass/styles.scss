@@ -91,6 +91,10 @@ header {
     padding: 1em;
     justify-content: space-between;
     display: flex;
+
+    & a {
+        font-weight: bold;
+    }
 }
 
 header nav {
