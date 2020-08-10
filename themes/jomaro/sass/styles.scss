@@ -5,8 +5,8 @@
 
 :root {
     --font-size: 15px;
-    --serif-font: 'PT Serif', serif;
-    --sans-font: 'Roboto', sans-serif;
+    --serif-font: 'Merriweather', serif;
+    --sans-font: 'Merriweather Sans', sans-serif;
     --color: #2a2a2a;
 }
 
@@ -36,19 +36,26 @@ h1, h2, h3, h4 {
     margin: 18px 0 15px;
     font-family: var(--sans-font);
     letter-spacing: 1px;
-    font-size: xx-large;
     font-variant: small-caps;
     font-weight: bolder;
 }
 
+h1 { font-size: x-large; }
+h2 { font-size: larger; }
+h3 { font-size: large; }
+h4 { font-size: medium; }
+h5 { font-size: medium; }
+h6 { font-size: medium; }
+
 p {
-    font-family: var(--serif-font);
     text-align: justify;
-    font-size: var(--font-size);
 }
 
 li, p {
     color: var(--color);
+    font-family: var(--serif-font);
+    font-size: var(--font-size);
+    line-height: 1.6em;
 }
 
 a {
@@ -65,7 +72,7 @@ pre code {
     padding: .9em .7em;
     max-width: 100%;
     overflow-y: scroll;
-    line-height: 1.25em;
+    line-height: 1.4em;
 }
 
 .heart {
@@ -78,6 +85,10 @@ hr {
     width: 80%;
     margin: inherit 15%;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
+}
+
+#main hr {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
 
 header, footer {
