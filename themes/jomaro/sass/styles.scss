@@ -4,9 +4,9 @@
 }
 
 :root {
-    --font-size: 15px;
-    --serif-font: 'Merriweather', serif;
-    --sans-font: 'Merriweather Sans', sans-serif;
+    --font-size: 22px;
+    --serif-font: 'Roboto', sans-serif;
+    --sans-font: 'Roboto', sans-serif;
     --color: #2a2a2a;
 }
 
@@ -29,27 +29,38 @@ body {
 #main {
     flex-grow: 1;
     padding: .8em 1.1em .8em .8em;
-    max-width: 700px;
+}
+
+aside {
+    padding: 1.5em;
+    text-align: center;
+}
+
+#content {
+    max-width: 600px;
+    margin: auto;
 }
 
 h1, h2, h3, h4 {
     margin: 18px 0 15px;
     font-family: var(--sans-font);
-    letter-spacing: 1px;
-    font-variant: small-caps;
-    font-weight: bolder;
+    font-weight: 700;
+    color: #222831;
 }
 
-h1 { font-size: x-large; }
-h2 { font-size: larger; }
-h3 { font-size: large; }
+article h2, 
+article h3, 
+article h4 {
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #cecfd1;
+}
+
+h1 { font-size: xx-large; }
+h2 { font-size: x-large; }
+h3 { font-size: larger; }
 h4 { font-size: medium; }
 h5 { font-size: medium; }
 h6 { font-size: medium; }
-
-p {
-    text-align: justify;
-}
 
 li, p {
     color: var(--color);
@@ -63,20 +74,25 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    border-bottom: 1px solid #262626;
+    padding-bottom: .1em;
+}
+
 code {
-    font-size: 13px;
+    font-size: var(--font-size) - 1px;
+}
+
+pre {
+    border-radius: 4px;
 }
 
 pre code {
     display: block;
-    padding: .9em .7em;
+    padding: .8em .7em;
     max-width: 100%;
-    overflow-y: scroll;
+    overflow-x: auto;
     line-height: 1.4em;
-}
-
-.heart {
-    color: #f11;
 }
 
 hr {
@@ -91,7 +107,19 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
 
-header, footer {
+/* ================================================== */
+
+aside picture img {
+    display: inline-block;
+    border-radius: 50%;
+    border: 8px solid #c1c0c6;
+}
+
+
+
+/* ================================================== */
+
+#header-wrapper, footer {
     background-color: #2f2e35;
     color: #f0f0f0;
     margin: 0;
@@ -99,21 +127,34 @@ header, footer {
 
     & a {
         color: #dadcdd;
+        padding-bottom: calc(.07rem + 1px);
+    }
+
+    & a:hover {
+        border-bottom: 1px solid #dadcdd;
+        padding-bottom: .07rem;
     }
 }
 
 header {
     padding: 1em;
     justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
     display: flex;
-
-    & a {
-        font-weight: bold;
-    }
 }
 
 header nav {
     margin-left: auto;
+}
+
+header a {
+    margin: 6px;
+    font-weight: 500;
+}
+
+footer {
+    margin-top: 40px;
 }
 
 footer .socials {
@@ -125,15 +166,6 @@ footer .socials {
 
 footer div {
     margin: 1rem;
-}
-
-header a {
-    text-decoration: none;
-}
-
-header a:hover {
-    text-decoration: underline;
-    
 }
 
 footer {

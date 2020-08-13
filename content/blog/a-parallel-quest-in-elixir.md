@@ -161,7 +161,6 @@ defmodule MyProj.FileImporterJob do
   end
   defp ensure_and_forward_stream({:ok, stream}), do: stream
 end
-
 ```
 
 
@@ -216,7 +215,6 @@ defmodule MyProj.FileImporterJob do
     |> Stream.run
   end
 end
-
 ```
 
 There is one final problem with this approach: inter process
@@ -257,7 +255,6 @@ defmodule MyProj.FileImporterJob do
     |> Database.insert(insert_chunk_size: @insert_chunk_size)
   end
 end
-
 ```
 
 This had a massive improvement in performance. The execution time
@@ -289,8 +286,7 @@ But my overall performance went up, so I think this was a small
 price to pay.
 
 
-Conclusions
------------
+## Conclusions
 
 Elixir has been a wonderful language to work with. It was not my
 first language when I started in this project, but it has surely

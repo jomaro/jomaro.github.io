@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "aside.html" %}
 
 {% block content %}
 {{ section.content | safe }}
@@ -7,7 +7,7 @@
   <div>
     <h3 class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
     <small>
-      {{ post.date| date(format="%B %d, %Y") }} - {{ post.word_count }} words - {{ post.reading_time }} mins
+      {{ post.date| date(format="%B %d, %Y") }} - {{ post.reading_time }} mins
     </small>
   </div>
   {% endfor %}

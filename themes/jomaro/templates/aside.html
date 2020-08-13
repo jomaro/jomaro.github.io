@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+<aside>
+    <picture>
+      <source src="/826-250x250.webp" type="image/webp">
+      <source src="/826-250x250.jpg" type="image/jpeg">
+      <img alt="my picture" src="/826-250x250.jpg" width="200" height="200">
+    </picture>
+
+    <h2>Jomaro Rodrigues</h2>
+</aside>
+<section id="content">
+  {% block content %}{% endblock content %}
+</section>
+{% endblock main %}
