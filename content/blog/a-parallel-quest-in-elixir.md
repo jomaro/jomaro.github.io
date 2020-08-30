@@ -1,6 +1,7 @@
 +++
 title = "A parallel quest in elixir"
 date = 2020-03-31
+template = "blog_post.html"
 [taxonomies]
 tags = ["elixir"]
 +++

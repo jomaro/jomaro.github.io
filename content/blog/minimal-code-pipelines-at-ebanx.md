@@ -1,6 +1,7 @@
 +++
 title = "Minimal code pipelines at EBANX"
 date = 2020-03-31
+template = "blog_post.html"
 [taxonomies]
 tags = ["software engineering"]
 +++
