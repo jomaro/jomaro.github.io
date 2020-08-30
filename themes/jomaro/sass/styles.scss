@@ -4,10 +4,11 @@
 }
 
 :root {
-    --font-size: 22px;
+    --font-size: 1.05rem;
+    --code-font-size: .85rem;
     --serif-font: 'Roboto', sans-serif;
     --sans-font: 'Roboto', sans-serif;
-    --color: #2a2a2a;
+    --color: #2a3a3a;
 }
 
 html {
@@ -55,12 +56,16 @@ article h4 {
     border-bottom: 1px solid #cecfd1;
 }
 
-h1 { font-size: xx-large; }
-h2 { font-size: x-large; }
-h3 { font-size: larger; }
-h4 { font-size: medium; }
-h5 { font-size: medium; }
-h6 { font-size: medium; }
+h1 { font-size: 2.3rem; }
+h2 { font-size: 2.1rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.3rem; }
+h5 { font-size: 1.3rem; }
+h6 { font-size: 1.3rem; }
+
+small {
+    color: var(--color);
+}
 
 li, p {
     color: var(--color);
@@ -79,8 +84,14 @@ a:hover {
     padding-bottom: .1em;
 }
 
-code {
-    font-size: var(--font-size) - 1px;
+p code {
+    font-size: calc(var(--font-size) * .9);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    padding: 0 .25em;
+    background-color: #d3d3d3;
+    background-blend-mode: darken;
+    border-radius: 3px;
 }
 
 pre {
@@ -88,6 +99,7 @@ pre {
 }
 
 pre code {
+    font-size: var(--code-font-size);
     display: block;
     padding: .8em .7em;
     max-width: 100%;

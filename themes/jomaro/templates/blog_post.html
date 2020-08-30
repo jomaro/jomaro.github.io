@@ -1,0 +1,13 @@
+{% extends "aside.html" %}
+
+{% block content %}
+<article>
+  <h1>{{ page.title }}</h1>
+
+  <small>
+    {{ page.date| date(format="%Y-%m-%d") }} - {{ page.reading_time }} mins
+  </small>
+
+  {{ page.content | safe }}
+</article>
+{% endblock content %}as
