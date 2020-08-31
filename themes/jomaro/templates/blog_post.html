@@ -5,7 +5,7 @@
   <h1>{{ page.title }}</h1>
 
   <small>
-    {{ page.date| date(format="%Y-%m-%d") }} - {{ page.reading_time }} mins
+    <code>{{ page.date| date(format="%Y-%m-%d") }}</code> -- {{ page.reading_time }} mins read
   </small>
 
   {{ page.content | safe }}

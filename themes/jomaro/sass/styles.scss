@@ -74,14 +74,15 @@ li, p {
     line-height: 1.6em;
 }
 
-a {
+#main a {
     color: #262626;
     text-decoration: none;
+    border-bottom: 1px solid #8c8aa4;
 }
 
-a:hover {
+#main a:hover {
+    transition: all .5s ease-in-out;
     border-bottom: 1px solid #262626;
-    padding-bottom: .1em;
 }
 
 p code {
@@ -139,12 +140,13 @@ aside picture img {
 
     & a {
         color: #dadcdd;
-        padding-bottom: calc(.07rem + 1px);
+        padding-bottom: 1px;
+        border-bottom: 0;
     }
 
     & a:hover {
         border-bottom: 1px solid #dadcdd;
-        padding-bottom: .07rem;
+        padding-bottom: 0;
     }
 }
 
@@ -163,10 +165,16 @@ header nav {
 header a {
     margin: 6px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 footer {
     margin-top: 40px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 footer .socials {
@@ -178,9 +186,5 @@ footer .socials {
 
 footer div {
     margin: 1rem;
-}
-
-footer {
-    text-align: center;
 }
 

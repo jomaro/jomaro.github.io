@@ -61,7 +61,7 @@ if just the elixir runtime would agree with me.
 The problem was not so simple, we had a previous version of the
 same importing pipeline which we used to run on Flow but we would
 like to try something simpler like
-[Task.async_stream](https://hexdocs.pm/elixir/1.9.1/Task.html#async_stream/3).
+[`Task.async_stream`](https://hexdocs.pm/elixir/1.9.1/Task.html#async_stream/3).
 
 We had the new sub-pipeline that would do all of the important
 work. In the importing pipeline (that will be my main subject

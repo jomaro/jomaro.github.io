@@ -7,7 +7,7 @@
   <div>
     <h3 class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
     <small>
-      {{ post.date| date(format="%Y-%m-%d") }} - {{ post.reading_time }} mins
+      <code>{{ post.date| date(format="%Y-%m-%d") }}</code>  -- {{ post.reading_time }} mins read
     </small>
   </div>
   {% endfor %}

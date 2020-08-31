@@ -6,5 +6,5 @@ template = "blog.html"
 +++
 
 
-<h3>Blog posts</h3>
+<h4>Blog posts</h4>
 
