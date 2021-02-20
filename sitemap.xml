@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jomaro.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://jomaro.github.io/about/</loc>
+    </url>
+    <url>
+        <loc>https://jomaro.github.io/blog/</loc>
+    </url>
+    <url>
+        <loc>https://jomaro.github.io/blog/a-parallel-quest-in-elixir/</loc>
+        <lastmod>2020-03-31</lastmod>
+    </url>
+    <url>
+        <loc>https://jomaro.github.io/blog/minimal-code-pipelines-at-ebanx/</loc>
+        <lastmod>2020-03-31</lastmod>
+    </url>
+</urlset>
