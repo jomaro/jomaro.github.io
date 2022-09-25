@@ -15,5 +15,9 @@ build_search_index = true
 
 theme = "jomaro"
 
+taxonomies = [
+    {name = "tags"},
+]
+
 [extra]
 # Put all your custom variables here
