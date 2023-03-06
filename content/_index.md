@@ -2,7 +2,11 @@
 
 +++
 
-I'm a brazilian software developer with a passion for computer science
-and the transformation it can bring to the world
+I'm a brazilian scomputer scientist working for 4 years in the payments industry.
 
-Main technologies of interest would be Rust and Elixir
+Main technologies:
+
+ - Elixir
+ - Rust
+ - Python
+ - PHP
