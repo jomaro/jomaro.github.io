@@ -2,7 +2,7 @@
 
 +++
 
-I'm a brazilian scomputer scientist working for 4 years in the payments industry.
+I'm a brazilian computer scientist working for 4 years in the payments industry.
 
 Main technologies:
 
@@ -10,3 +10,4 @@ Main technologies:
  - Rust
  - Python
  - PHP
+ 
